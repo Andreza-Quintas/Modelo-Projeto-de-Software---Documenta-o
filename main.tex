@@ -1,0 +1,50 @@
+% ------------------------------------------------------------------------
+% TCC1..2: Modelo de Documento para TCC e entrega para Banca - SENAI
+% 
+% Template por Andreza Quintas
+%		(https://orcid.org/0000-0002-8169-6884)
+%		(https://lattes.cnpq.br/8803951686659455)
+% 24.mar versao 1
+% ------------------------------------------------------------------------
+% Agradecimentos a Overleaf pela oportunidade 
+% ------------------------------------------------------------------------
+
+\documentclass[12pt]{article}	
+\usepackage[a4paper,left=30mm,right=25mm,top=30mm,bottom=25mm,headsep=15.5mm]{geometry} 
+
+\usepackage[brazil]{babel}                                 
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc}
+
+\usepackage{ragged2e}
+\renewcommand{\familydefault}{\sfdefault} 
+\usepackage{setspace}  \onehalfspacing  
+\usepackage{quoting}
+\usepackage[svgnames,dvipsnames,x11names,table,xcdraw]{xcolor} %para tabelas com cor de fundo 
+
+\usepackage{indentfirst}
+
+\usepackage{url} 
+\makeatletter  \def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
+\makeatother \urlstyle{leo}
+
+\usepackage{graphicx}        
+
+\usepackage[inline]{enumitem} 
+\usepackage[absolute]{textpos}
+
+\newenvironment{citedireto}{\begin{quoting}[rightmargin=0cm,leftmargin=4cm]\begin{singlespace}\small\noindent\hspace{-0.43em}}{\end{singlespace}\end{quoting}}
+
+\usepackage[alf,versalete]{abntex2cite}
+\begin{document}
+
+\pagestyle{myheadings}
+\newpage \pagenumbering{arabic}
+
+\input{corpo} 
+\pagebreak
+ 
+\bibliography{acervo.bib,Mendeley.bib}
+\end{document}
+
